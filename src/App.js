@@ -1,5 +1,6 @@
 import {useSelector, useDispatch} from "react-redux";
 import {increment, decrement} from "./store/slices/counterSlice";
+import Button from "@mui/material/Button";
 
 import "./App.css";
 
@@ -11,8 +12,12 @@ const App = () => {
     <div className="App">
       <div>{count}</div>
       <div>
-        <button onClick={() => dispatch(decrement())}>- 1</button>
-        <button onClick={() => dispatch(increment())}>+ 1</button>
+        <Button onClick={() => dispatch(decrement())} variant="contained">
+          -1
+        </Button>
+        <Button onClick={() => dispatch(increment())} variant="contained">
+          +1
+        </Button>
       </div>
     </div>
   );
