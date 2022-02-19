@@ -1,3 +1,8 @@
-.Header {
-	background: red;
+.active p {
+	font-weight: 700;
+}
+
+a {
+	color: #fff;
+	text-decoration: none;
 }
